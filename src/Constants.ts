@@ -51,5 +51,17 @@ export const ASSET_MANIFEST:Object[] = [
         src:"./lib/Spritesheets/background-0.png",
         id:"background",
         data:0
+    },
+    {
+        type:"json",
+        src:"./lib/Spritesheets/Victory.json",
+        id:"Victory",
+        data:0
+    },
+    {
+        type:"image",
+        src:"./lib/Spritesheets/Victory.png",
+        id:"Victory",
+        data:0
     }
 ];

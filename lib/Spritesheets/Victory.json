@@ -1,0 +1,21 @@
+{
+
+"images": [
+    "Victory.png"
+],
+
+"framerate": 30,
+"frames": [
+    [1, 1, 100, 100, 0, 0, 0]
+],
+
+"animations": {
+    "Victory": { "frames": [0] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:4c8e9cec4cbecb1d74dfbd9ee23544b7:f5531677f5f8a2132d88d392b94709d9:e4828f4b2c654ddf8de306977b616534$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

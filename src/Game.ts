@@ -110,8 +110,34 @@ let winA:boolean;
 let winB:boolean;
 let winC:boolean;
 
+let Victory:createjs.Sprite;
+
+function winCheck(){
+    if (winA==true&&winB==true&&winC==true){
+        console.log("WIN!!");
+        Victory=assetManager.getSprite("Victory","Victory",225,470);
+        stage.addChild(Victory);
+        
+        Victory.on("mousedown",Reset);
+
+    }
+
+}
+
 function Reset(){
     //when the game resets the numbers
+
+    stage.removeChild(Alerts1);
+    stage.removeChild(Alerts2);
+    stage.removeChild(Alerts3);
+    stage.removeChild(Victory);
+
+
+    winA=false;
+
+    winB=false;
+
+    winC=false;
 
     FirstNum = randomMe(1,10);
 
@@ -160,16 +186,24 @@ function numCheckA(){
         //console.log("2");
         Alerts1.gotoAndStop("Pico1");
 
-        winA=true;
+        winA=false;
     }
     
+    else if (Anumber==ThirdNum){
+        //console.log("2");
+        Alerts1.gotoAndStop("Pico1");
+
+        winA=false;
+    }
+
     else if (Anumber!=FirstNum&&Anumber!=SecondNum) {
         //console.log("3");
         Alerts1.gotoAndStop("Pico3");
 
-        winA=true;
+        winA=false;
     }
 
+    winCheck();
 }
 
 function numCheckB(){
@@ -178,14 +212,14 @@ function numCheckB(){
         //console.log("1");
         Alerts2.gotoAndStop("Pico2");
 
-        winA=true;
+        winB=true;
     }
     
     else if (Bnumber==FirstNum){
         //console.log("2");
         Alerts2.gotoAndStop("Pico1");
 
-        winA=false;
+        winB=false;
     }
     
     else if (Bnumber==ThirdNum){
@@ -202,6 +236,7 @@ function numCheckB(){
         winB=false;
     }
 
+    winCheck();
 }
 
 function numCheckC(){
@@ -234,6 +269,7 @@ function numCheckC(){
         winC=false;
     }
 
+    winCheck();
 }
 
 function A1press(){
@@ -896,6 +932,7 @@ function onReady(e:createjs.Event):void {
     ButtonsC8.on("mousedown",C8press);
     ButtonsC9.on("mousedown",C9press);
     ButtonsC10.on("mousedown",C10press);
+
 
     // startup the ticker
     createjs.Ticker.framerate = FRAME_RATE;
