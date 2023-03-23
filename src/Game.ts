@@ -134,6 +134,8 @@ function numCheck(){
 }
 
 function A1press(){
+
+    resetRowA();
     stage.removeChild(ButtonsA1);
 
     SelectButtonsA1=assetManager.getSprite("SelectButtons","SelectButton1",20,300);
@@ -144,6 +146,8 @@ function A1press(){
 
 
 function A2press(){
+    
+    resetRowA();
     stage.removeChild(ButtonsA2);
 
     SelectButtonsA2=assetManager.getSprite("SelectButtons","SelectButton2",70,300);
@@ -154,6 +158,9 @@ function A2press(){
 
 
 function A3press(){
+
+    resetRowA();
+
     stage.removeChild(ButtonsA3);
 
     SelectButtonsA3=assetManager.getSprite("SelectButtons","SelectButton3",120,300);
@@ -164,6 +171,9 @@ function A3press(){
 
 
 function A4press(){
+
+    resetRowA();
+
     stage.removeChild(ButtonsA4);
 
     SelectButtonsA4=assetManager.getSprite("SelectButtons","SelectButton4",170,300);
@@ -174,6 +184,9 @@ function A4press(){
 
 
 function A5press(){
+
+    resetRowA();
+
     stage.removeChild(ButtonsA5);
 
     SelectButtonsA5=assetManager.getSprite("SelectButtons","SelectButton5",220,300);
@@ -184,6 +197,9 @@ function A5press(){
 
 
 function A6press(){
+
+    resetRowA();
+
     stage.removeChild(ButtonsA6);
 
     SelectButtonsA6=assetManager.getSprite("SelectButtons","SelectButton6",270,300);
@@ -194,6 +210,9 @@ function A6press(){
 
 
 function A7press(){
+
+    resetRowA();
+
     stage.removeChild(ButtonsA7);
 
     SelectButtonsA7=assetManager.getSprite("SelectButtons","SelectButton7",320,300);
@@ -204,6 +223,9 @@ function A7press(){
 
 
 function A8press(){
+
+    resetRowA();
+
     stage.removeChild(ButtonsA8);
 
     SelectButtonsA8=assetManager.getSprite("SelectButtons","SelectButton8",370,300);
@@ -214,6 +236,9 @@ function A8press(){
 
 
 function A9press(){
+
+    resetRowA();
+
     stage.removeChild(ButtonsA9);
 
     SelectButtonsA9=assetManager.getSprite("SelectButtons","SelectButton9",420,300);
@@ -224,6 +249,9 @@ function A9press(){
 
 
 function A10press(){
+
+    resetRowA();
+
     stage.removeChild(ButtonsA10);
 
     SelectButtonsA10=assetManager.getSprite("SelectButtons","SelectButton10",470,300);
@@ -234,6 +262,9 @@ function A10press(){
 
 
 function B1press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB1);
 
     SelectButtonsB1=assetManager.getSprite("SelectButtons","SelectButton1",20,350);
@@ -244,6 +275,9 @@ function B1press(){
 
 
 function B2press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB2);
 
     SelectButtonsB2=assetManager.getSprite("SelectButtons","SelectButton2",70,350);
@@ -254,6 +288,9 @@ function B2press(){
 
 
 function B3press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB3);
 
     SelectButtonsB3=assetManager.getSprite("SelectButtons","SelectButton3",120,350);
@@ -264,6 +301,9 @@ function B3press(){
 
 
 function B4press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB4);
 
     SelectButtonsB4=assetManager.getSprite("SelectButtons","SelectButton4",170,350);
@@ -274,6 +314,9 @@ function B4press(){
 
 
 function B5press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB5);
 
     SelectButtonsB5=assetManager.getSprite("SelectButtons","SelectButton5",220,350);
@@ -284,6 +327,9 @@ function B5press(){
 
 
 function B6press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB6);
 
     SelectButtonsB6=assetManager.getSprite("SelectButtons","SelectButton6",270,350);
@@ -294,6 +340,9 @@ function B6press(){
 
 
 function B7press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB7);
 
     SelectButtonsB7=assetManager.getSprite("SelectButtons","SelectButton7",320,350);
@@ -304,6 +353,9 @@ function B7press(){
 
 
 function B8press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB8);
 
     SelectButtonsB8=assetManager.getSprite("SelectButtons","SelectButton8",370,350);
@@ -314,6 +366,9 @@ function B8press(){
 
 
 function B9press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB9);
 
     SelectButtonsB9=assetManager.getSprite("SelectButtons","SelectButton9",420,350);
@@ -324,6 +379,9 @@ function B9press(){
 
 
 function B10press(){
+
+    resetRowB();
+
     stage.removeChild(ButtonsB10);
 
     SelectButtonsB10=assetManager.getSprite("SelectButtons","SelectButton10",470,350);
@@ -334,7 +392,10 @@ function B10press(){
 
 
 function C1press(){
-    stage.removeChild(ButtonsA1);
+
+    resetRowC();
+
+    stage.removeChild(ButtonsC1);
 
     SelectButtonsC1=assetManager.getSprite("SelectButtons","SelectButton1",20,400);
     SelectButtonsC1.scaleX=0.1;
@@ -344,6 +405,9 @@ function C1press(){
 
 
 function C2press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC2);
 
     SelectButtonsC2=assetManager.getSprite("SelectButtons","SelectButton2",70,400);
@@ -354,6 +418,9 @@ function C2press(){
 
 
 function C3press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC3);
 
     SelectButtonsC3=assetManager.getSprite("SelectButtons","SelectButton3",120,400);
@@ -364,6 +431,9 @@ function C3press(){
 
 
 function C4press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC4);
 
     SelectButtonsC4=assetManager.getSprite("SelectButtons","SelectButton4",170,400);
@@ -374,6 +444,9 @@ function C4press(){
 
 
 function C5press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC5);
 
     SelectButtonsC5=assetManager.getSprite("SelectButtons","SelectButton5",220,400);
@@ -384,6 +457,9 @@ function C5press(){
 
 
 function C6press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC6);
 
     SelectButtonsC6=assetManager.getSprite("SelectButtons","SelectButton6",270,400);
@@ -394,6 +470,9 @@ function C6press(){
 
 
 function C7press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC7);
 
     SelectButtonsC7=assetManager.getSprite("SelectButtons","SelectButton7",320,400);
@@ -404,6 +483,9 @@ function C7press(){
 
 
 function C8press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC8);
 
     SelectButtonsC8=assetManager.getSprite("SelectButtons","SelectButton8",370,400);
@@ -414,6 +496,9 @@ function C8press(){
 
 
 function C9press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC9);
 
     SelectButtonsC9=assetManager.getSprite("SelectButtons","SelectButton9",420,400);
@@ -424,6 +509,9 @@ function C9press(){
 
 
 function C10press(){
+
+    resetRowC();
+
     stage.removeChild(ButtonsC10);
 
     SelectButtonsC10=assetManager.getSprite("SelectButtons","SelectButton10",470,400);
