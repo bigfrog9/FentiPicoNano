@@ -64,17 +64,9 @@ let ButtonsC8:createjs.Sprite;
 let ButtonsC9:createjs.Sprite;
 let ButtonsC10:createjs.Sprite;
 
-let A1num:number;
-let A2num:number;
-let A3num:number;
-let A4num:number;
-let A5num:number;
-let A6num:number;
-let A7num:number;
-let A8num:number;
-let A9num:number;
-let A10num:number;
-
+let Anumber:number;
+let Bnumber:number;
+let Cnumber:number;
 
 let SelectButtonsA1:createjs.Sprite;
 let SelectButtonsA2:createjs.Sprite;
@@ -114,28 +106,142 @@ let Alerts1:createjs.Sprite;
 let Alerts2:createjs.Sprite;
 let Alerts3:createjs.Sprite;
 
+let winA:boolean;
+let winB:boolean;
+let winC:boolean;
 
 function Reset(){
     //when the game resets the numbers
 
     FirstNum = randomMe(1,10);
 
+    console.log("First number is "+ FirstNum);
+
     SecondNum = randomMe(1,10);
+
+    console.log("Second number is "+ SecondNum);
 
     ThirdNum = randomMe(1,10);
 
+    console.log("Third number is "+ ThirdNum);
+
+
+    
+    Alerts1=assetManager.getSprite("Alerts","Pico3",0,450);
+    Alerts1.scaleX=0.5;
+    Alerts1.scaleY=0.5;
+    stage.addChild(Alerts1);
+    
+    Alerts2=assetManager.getSprite("Alerts","Pico3",175,450);
+    Alerts2.scaleX=0.5;
+    Alerts2.scaleY=0.5;
+    stage.addChild(Alerts2);
+    
+    Alerts3=assetManager.getSprite("Alerts","Pico3",350,450);
+    Alerts3.scaleX=0.5;
+    Alerts3.scaleY=0.5;
+    stage.addChild(Alerts3);
+    
     resetRowA();
     resetRowB();
     resetRowC();
 }
 
-function numCheck(){
+function numCheckA(){
+
+    if (Anumber==FirstNum){
+        //console.log("1");
+        Alerts1.gotoAndStop("Pico2");
+
+        winA=true;
+    }
+    
+    else if (Anumber==SecondNum){
+        //console.log("2");
+        Alerts1.gotoAndStop("Pico1");
+
+        winA=true;
+    }
+    
+    else if (Anumber!=FirstNum&&Anumber!=SecondNum) {
+        //console.log("3");
+        Alerts1.gotoAndStop("Pico3");
+
+        winA=true;
+    }
+
+}
+
+function numCheckB(){
+
+    if (Bnumber==SecondNum){
+        //console.log("1");
+        Alerts2.gotoAndStop("Pico2");
+
+        winA=true;
+    }
+    
+    else if (Bnumber==FirstNum){
+        //console.log("2");
+        Alerts2.gotoAndStop("Pico1");
+
+        winA=false;
+    }
+    
+    else if (Bnumber==ThirdNum){
+        
+        Alerts2.gotoAndStop("Pico1");
+
+        winB=false;
+    }
+
+    else {
+        //console.log("3");
+        Alerts2.gotoAndStop("Pico3");
+
+        winB=false;
+    }
+
+}
+
+function numCheckC(){
+
+    if (Cnumber==ThirdNum){
+        //console.log("1");
+        Alerts3.gotoAndStop("Pico2");
+
+        winC=true;
+    }
+    
+    else if (Cnumber==SecondNum){
+        //console.log("2");
+        Alerts3.gotoAndStop("Pico1");
+
+        winC=false;
+    }
+    
+    else if (Cnumber==FirstNum){
+        
+        Alerts3.gotoAndStop("Pico1");
+
+        winC=false;
+    }
+
+    else {
+        //console.log("3");
+        Alerts3.gotoAndStop("Pico3");
+
+        winC=false;
+    }
 
 }
 
 function A1press(){
 
+    Anumber=1;
+
     resetRowA();
+
     stage.removeChild(ButtonsA1);
 
     SelectButtonsA1=assetManager.getSprite("SelectButtons","SelectButton1",20,300);
@@ -147,7 +253,10 @@ function A1press(){
 
 function A2press(){
     
+    Anumber=2;
+
     resetRowA();
+
     stage.removeChild(ButtonsA2);
 
     SelectButtonsA2=assetManager.getSprite("SelectButtons","SelectButton2",70,300);
@@ -158,6 +267,8 @@ function A2press(){
 
 
 function A3press(){
+
+    Anumber=3;
 
     resetRowA();
 
@@ -172,6 +283,8 @@ function A3press(){
 
 function A4press(){
 
+    Anumber=4;
+
     resetRowA();
 
     stage.removeChild(ButtonsA4);
@@ -184,6 +297,8 @@ function A4press(){
 
 
 function A5press(){
+
+    Anumber=5;
 
     resetRowA();
 
@@ -198,6 +313,8 @@ function A5press(){
 
 function A6press(){
 
+    Anumber=6;
+
     resetRowA();
 
     stage.removeChild(ButtonsA6);
@@ -210,6 +327,8 @@ function A6press(){
 
 
 function A7press(){
+
+    Anumber=7;
 
     resetRowA();
 
@@ -224,6 +343,8 @@ function A7press(){
 
 function A8press(){
 
+    Anumber=8;
+
     resetRowA();
 
     stage.removeChild(ButtonsA8);
@@ -236,6 +357,8 @@ function A8press(){
 
 
 function A9press(){
+
+    Anumber=9;
 
     resetRowA();
 
@@ -250,6 +373,8 @@ function A9press(){
 
 function A10press(){
 
+    Anumber=10;
+
     resetRowA();
 
     stage.removeChild(ButtonsA10);
@@ -262,6 +387,8 @@ function A10press(){
 
 
 function B1press(){
+
+    Bnumber=1;
 
     resetRowB();
 
@@ -276,6 +403,8 @@ function B1press(){
 
 function B2press(){
 
+    Bnumber=2;
+
     resetRowB();
 
     stage.removeChild(ButtonsB2);
@@ -288,6 +417,8 @@ function B2press(){
 
 
 function B3press(){
+
+    Bnumber=3;
 
     resetRowB();
 
@@ -302,6 +433,8 @@ function B3press(){
 
 function B4press(){
 
+    Bnumber=4;
+
     resetRowB();
 
     stage.removeChild(ButtonsB4);
@@ -314,6 +447,8 @@ function B4press(){
 
 
 function B5press(){
+
+    Bnumber=5;
 
     resetRowB();
 
@@ -328,6 +463,8 @@ function B5press(){
 
 function B6press(){
 
+    Bnumber=6;
+
     resetRowB();
 
     stage.removeChild(ButtonsB6);
@@ -340,6 +477,8 @@ function B6press(){
 
 
 function B7press(){
+
+    Bnumber=7;
 
     resetRowB();
 
@@ -354,6 +493,8 @@ function B7press(){
 
 function B8press(){
 
+    Bnumber=8;
+
     resetRowB();
 
     stage.removeChild(ButtonsB8);
@@ -366,6 +507,8 @@ function B8press(){
 
 
 function B9press(){
+
+    Bnumber=9;
 
     resetRowB();
 
@@ -380,6 +523,8 @@ function B9press(){
 
 function B10press(){
 
+    Bnumber=10;
+
     resetRowB();
 
     stage.removeChild(ButtonsB10);
@@ -392,6 +537,8 @@ function B10press(){
 
 
 function C1press(){
+
+    Cnumber=1;
 
     resetRowC();
 
@@ -406,6 +553,8 @@ function C1press(){
 
 function C2press(){
 
+    Cnumber=2;
+
     resetRowC();
 
     stage.removeChild(ButtonsC2);
@@ -418,6 +567,8 @@ function C2press(){
 
 
 function C3press(){
+
+    Cnumber=3;
 
     resetRowC();
 
@@ -432,6 +583,8 @@ function C3press(){
 
 function C4press(){
 
+    Cnumber=4;
+
     resetRowC();
 
     stage.removeChild(ButtonsC4);
@@ -444,6 +597,8 @@ function C4press(){
 
 
 function C5press(){
+
+    Cnumber=5;
 
     resetRowC();
 
@@ -458,6 +613,8 @@ function C5press(){
 
 function C6press(){
 
+    Cnumber=6;
+
     resetRowC();
 
     stage.removeChild(ButtonsC6);
@@ -470,6 +627,8 @@ function C6press(){
 
 
 function C7press(){
+
+    Cnumber=7;
 
     resetRowC();
 
@@ -484,6 +643,8 @@ function C7press(){
 
 function C8press(){
 
+    Cnumber=8;
+
     resetRowC();
 
     stage.removeChild(ButtonsC8);
@@ -496,6 +657,8 @@ function C8press(){
 
 
 function C9press(){
+
+    Cnumber=9;
 
     resetRowC();
 
@@ -510,6 +673,8 @@ function C9press(){
 
 function C10press(){
 
+    Cnumber=10;
+
     resetRowC();
 
     stage.removeChild(ButtonsC10);
@@ -522,6 +687,9 @@ function C10press(){
 
 
 function resetRowA(){
+
+    numCheckA();
+
     ButtonsA1=assetManager.getSprite("Buttons","Buttons1",20,300);
     ButtonsA1.scaleX=0.1;
     ButtonsA1.scaleY=0.1;
@@ -574,6 +742,9 @@ function resetRowA(){
 }
 
 function resetRowB(){
+
+    numCheckB();
+
     ButtonsB1=assetManager.getSprite("Buttons","Buttons1",20,350);
     ButtonsB1.scaleX=0.1;
     ButtonsB1.scaleY=0.1;
@@ -626,6 +797,9 @@ function resetRowB(){
 }
 
 function resetRowC(){
+
+    numCheckC();
+
     ButtonsC1=assetManager.getSprite("Buttons","Buttons1",20,400);
     ButtonsC1.scaleX=0.1;
     ButtonsC1.scaleY=0.1;
