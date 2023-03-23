@@ -1,0 +1,25 @@
+{
+
+"images": [
+    "Alerts.png"
+],
+
+"framerate": 30,
+"frames": [
+    [1, 1, 317, 141, 0, -42, -34],
+    [1, 144, 349, 162, 0, -24, -20],
+    [1, 308, 312, 139, 0, -44, -33]
+],
+
+"animations": {
+    "Pico1": { "frames": [0] },
+    "Pico2": { "frames": [1] },
+    "Pico3": { "frames": [2] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:26e75c807af018aecb53e5185653b7b4:57b9c98f1e15fc150e16656de0365e55:a21958cd84543312b8fa09b5d53ccfe2$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

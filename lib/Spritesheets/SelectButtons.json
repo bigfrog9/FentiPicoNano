@@ -1,0 +1,39 @@
+{
+
+"images": [
+    "SelectButtons.png"
+],
+
+"framerate": 30,
+"frames": [
+    [1, 1, 400, 400, 0, 0, 0],
+    [403, 1, 400, 400, 0, 0, 0],
+    [805, 1, 400, 400, 0, 0, 0],
+    [1207, 1, 400, 400, 0, 0, 0],
+    [1609, 1, 400, 400, 0, 0, 0],
+    [1, 403, 400, 400, 0, 0, 0],
+    [403, 403, 400, 400, 0, 0, 0],
+    [805, 403, 400, 400, 0, 0, 0],
+    [1207, 403, 400, 400, 0, 0, 0],
+    [1609, 403, 400, 400, 0, 0, 0]
+],
+
+"animations": {
+    "SelectButton1": { "frames": [0] },
+    "SelectButton2": { "frames": [1] },
+    "SelectButton3": { "frames": [2] },
+    "SelectButton4": { "frames": [3] },
+    "SelectButton5": { "frames": [4] },
+    "SelectButton6": { "frames": [5] },
+    "SelectButton7": { "frames": [6] },
+    "SelectButton8": { "frames": [7] },
+    "SelectButton9": { "frames": [8] },
+    "SelectButton10": { "frames": [9] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:d1c074bdd1ea29ce2c813403c2cc7b4e:7f09fa6f956b46b49843a19de142971c:792cf87a858d2eac9bf2b6a3a7a44d5b$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

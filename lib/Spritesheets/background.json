@@ -1,0 +1,21 @@
+{
+
+"images": [
+    "background-0.png"
+],
+
+"framerate": 20,
+"frames": [
+    [1, 1, 600, 600, 0, 0, 0]
+],
+
+"animations": {
+    "WallPaper": { "frames": [0] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:f000742b6a565fd044da633373a7a4a7:34c75557762e9a8d859cb12d99b7176b:1846c7830396421cfbdd9741f81b3da2$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}

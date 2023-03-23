@@ -1,0 +1,41 @@
+{
+
+"images": [
+    "Buttons.png"
+],
+
+"framerate": 30,
+"frames": [
+    [1, 1, 400, 400, 0, 0, 0],
+    [1, 1, 400, 400, 0, 0, 0],
+    [403, 1, 400, 400, 0, 0, 0],
+    [805, 1, 400, 400, 0, 0, 0],
+    [1207, 1, 400, 400, 0, 0, 0],
+    [1609, 1, 400, 400, 0, 0, 0],
+    [1, 403, 400, 400, 0, 0, 0],
+    [403, 403, 400, 400, 0, 0, 0],
+    [805, 403, 400, 400, 0, 0, 0],
+    [1207, 403, 400, 400, 0, 0, 0],
+    [1609, 403, 400, 400, 0, 0, 0]
+],
+
+"animations": {
+    "Buttons": { "frames": [0] },
+    "Buttons1": { "frames": [1] },
+    "Buttons2": { "frames": [2] },
+    "Buttons3": { "frames": [3] },
+    "Buttons4": { "frames": [4] },
+    "Buttons5": { "frames": [5] },
+    "Buttons6": { "frames": [6] },
+    "Buttons7": { "frames": [7] },
+    "Buttons8": { "frames": [8] },
+    "Buttons9": { "frames": [9] },
+    "Buttons10": { "frames": [10] }
+},
+
+"texturepacker": [
+        "SmartUpdateHash: $TexturePacker:SmartUpdate:b740da02849753d5e01337293f450b16:98ff392650bb074389cec0b32ce3ea13:3927448dce5de7869762a67ec500bb79$",
+        "Created with TexturePacker (https://www.codeandweb.com/texturepacker) for EaselJS"
+]
+
+}
