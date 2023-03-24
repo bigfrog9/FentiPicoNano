@@ -63,5 +63,31 @@ export const ASSET_MANIFEST:Object[] = [
         src:"./lib/Spritesheets/Victory.png",
         id:"Victory",
         data:0
+    },
+    {
+        type:"sound",
+        src:"./lib/Sounds/hitHurt.ogg",
+        id:"Bagel",
+        data:0
+    },
+    {
+        type:"sound",
+        src:"./lib/Sounds/jump.ogg",
+        id:"Pico",
+        data:0
+    },
+    {
+        type:"sound",
+        src:"./lib/Sounds/pickupCoin.ogg",
+        id:"VictoryNoise",
+        data:0
+    },
+    {
+        type:"sound",
+        src:"./lib/Sounds/powerUp.ogg",
+        id:"Fermi",
+        data:0
     }
+    
+    
 ];

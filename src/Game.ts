@@ -112,8 +112,13 @@ let winC:boolean;
 
 let Victory:createjs.Sprite;
 
+//let VictoryNoise:createjs.Sound;
+
 function winCheck(){
     if (winA==true&&winB==true&&winC==true){
+        
+        createjs.Sound.play("VictoryNoise");
+
         console.log("WIN!!");
         Victory=assetManager.getSprite("Victory","Victory",225,470);
         stage.addChild(Victory);
@@ -126,6 +131,10 @@ function winCheck(){
 
 function Reset(){
     //when the game resets the numbers
+
+    Anumber=null;
+    Bnumber=null;
+    Cnumber=null;
 
     stage.removeChild(Alerts1);
     stage.removeChild(Alerts2);
@@ -179,12 +188,15 @@ function numCheckA(){
         //console.log("1");
         Alerts1.gotoAndStop("Pico2");
 
+        createjs.Sound.play("Fermi");
         winA=true;
     }
     
     else if (Anumber==SecondNum){
         //console.log("2");
         Alerts1.gotoAndStop("Pico1");
+
+        createjs.Sound.play("Pico")
 
         winA=false;
     }
@@ -193,12 +205,16 @@ function numCheckA(){
         //console.log("2");
         Alerts1.gotoAndStop("Pico1");
 
+        createjs.Sound.play("Pico")
+
         winA=false;
     }
 
     else if (Anumber!=FirstNum&&Anumber!=SecondNum) {
         //console.log("3");
         Alerts1.gotoAndStop("Pico3");
+
+        createjs.Sound.play("Bagel")
 
         winA=false;
     }
@@ -212,12 +228,16 @@ function numCheckB(){
         //console.log("1");
         Alerts2.gotoAndStop("Pico2");
 
+        createjs.Sound.play("Fermi");
+
         winB=true;
     }
     
     else if (Bnumber==FirstNum){
         //console.log("2");
         Alerts2.gotoAndStop("Pico1");
+
+        createjs.Sound.play("Pico")
 
         winB=false;
     }
@@ -226,12 +246,16 @@ function numCheckB(){
         
         Alerts2.gotoAndStop("Pico1");
 
+        createjs.Sound.play("Pico")
+
         winB=false;
     }
 
     else {
         //console.log("3");
         Alerts2.gotoAndStop("Pico3");
+
+        createjs.Sound.play("Bagel")
 
         winB=false;
     }
@@ -245,6 +269,8 @@ function numCheckC(){
         //console.log("1");
         Alerts3.gotoAndStop("Pico2");
 
+        createjs.Sound.play("Fermi");
+
         winC=true;
     }
     
@@ -252,6 +278,7 @@ function numCheckC(){
         //console.log("2");
         Alerts3.gotoAndStop("Pico1");
 
+        createjs.Sound.play("Pico")
         winC=false;
     }
     
@@ -259,12 +286,16 @@ function numCheckC(){
         
         Alerts3.gotoAndStop("Pico1");
 
+        createjs.Sound.play("Pico")
+
         winC=false;
     }
 
     else {
         //console.log("3");
         Alerts3.gotoAndStop("Pico3");
+        
+        createjs.Sound.play("Bagel")
 
         winC=false;
     }
